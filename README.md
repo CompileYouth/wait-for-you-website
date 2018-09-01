@@ -1,7 +1,7 @@
 # Wait For You Website
 An official website for *Wait For You*.
 
-### How to use css
+### How to use LESS
 1. Find `/node_modules/react-scripts/config/webpack.config.dev.js`;
 2. Find `test: /\.css$/`, change it to `test: /\.(?:le|c)ss$/`;
 3. On the `use` array, after the `css-loader` object, add:
