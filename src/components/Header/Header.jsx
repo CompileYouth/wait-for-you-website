@@ -5,7 +5,11 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         return (<header className="wfy-header">
-            <div className="container"></div>
+            <div className="container">
+                <div className="logo">
+                    <a className="logo-link"></a>
+                </div>
+            </div>
         </header>);
     }
 }

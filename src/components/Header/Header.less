@@ -2,7 +2,44 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 0;
-    background-color: transparent;
+    width: 100%;
+    // background-color: transparent;
+    background-color: #5C2E88;
     min-height: 66px;
+
+    .container {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .logo {
+        a {
+            display: block;
+            background-size: contain;
+            background-position: left center;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 70px;
+        }
+        a.logo-link {
+            background-image: url('https://www.ugediao.com/wp-content/uploads/2017/11/logo白.png');
+        }  
+    }
+    
+}
+
+@media (min-width: 1220px) {
+    .wfy-header {
+
+        .container {
+            width: 1170px;
+    
+        }
+        
+        .logo {
+            a.logo-link {
+                background-image: url('https://www.ugediao.com/wp-content/uploads/2017/09/2017090717473777.png');
+            }
+        }
+    }
 }
