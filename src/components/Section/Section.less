@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 
     .container {
     }
@@ -82,14 +83,26 @@
 
 @media (min-width: 1220px) {
     .wfy-section {
-        background-image: url('./imgs/section-background.jpg');
+        
+        .background {
+            position: absolute;
+            background-image: url('./imgs/section-background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
 
         .container {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             height: 500px;
-            width: 1170px;
+            width: 1180px;
             margin: 0 auto;
         }
     }
@@ -100,7 +113,7 @@
             .content {
                 height: 500px;
                 .info {
-                    padding: 35px 30px;
+                    padding: 35px 30px 20px;
                     h2 {
                         font-size: 22px;
                     }

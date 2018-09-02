@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 class Section extends Component {
     render() {
         return (<section className="wfy-section">
+            <div className="background"></div>
             <div className="container">
                 <div className="item item1">
                     <a>
