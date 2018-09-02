@@ -1,0 +1,123 @@
+.wfy-section {
+    margin-top: 0;
+    padding: 120px 0 50px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container {
+    }
+}
+
+.item {
+    a {
+        display: block;
+    }
+    .content {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .info {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        right: auto;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.8) 100%);
+        h2 {
+            color: #fff;
+        }
+        .personal-info {
+            span {
+                position: relative;
+                color: #BFBFBF;
+                font-size: 14px;
+                padding-left: 16px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 6px;
+                    top: 40%;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #BFBFBF;
+                }
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    &.item1 {
+        .content {
+            background-image: url('./imgs/NO19.jpeg');
+        }
+    }
+    &.item2 {
+        .content {
+            background-image: url('./imgs/NO12.jpeg');
+        }
+    }
+    &.item3 {
+        .content {
+            background-image: url('./imgs/NO05.jpeg');
+        }
+    }
+    &.item4 {
+        .content {
+            background-image: url('./imgs/NO20.jpeg');
+        }
+    }
+    &.item5 {
+        .content {
+            background-image: url('./imgs/NO16.jpeg');
+        }
+    }
+}
+
+@media (min-width: 1220px) {
+    .wfy-section {
+        background-image: url('./imgs/section-background.jpg');
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 500px;
+            width: 1170px;
+            margin: 0 auto;
+        }
+    }
+
+    .item {
+        &.item1 {
+            width: 50%;
+            .content {
+                height: 500px;
+                .info {
+                    padding: 35px 30px;
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        &.item2, &.item3, &.item4, &.item5 {
+            width: 25%;
+            .content {
+                height: 250px;
+                .info {
+                    padding: 25px 20px 20px 20px;
+                    h2 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
