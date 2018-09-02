@@ -7,7 +7,7 @@ class Header extends Component {
         return (<header className="wfy-header">
             <div className="container">
                 <div className="logo">
-                    <a className="logo-link"></a>
+                    <a className="logo-link"> </a>
                 </div>
             </div>
         </header>);
