@@ -16,7 +16,8 @@ An official website for *Wait For You*.
     Before this, run `npm i --save-dev less-loader less-watch-compiler`;
 4. Your file should like this:
     ![](./img/less-config.png)
-5. Apply the same setting to `/node_modules/react-scripts/config/webpack.config.prod.js`.
+5. Remember put your `less-loader` in the last of the array.
+6. Apply the same setting to `/node_modules/react-scripts/config/webpack.config.prod.js`.
 
 **Reference**
 1. [**Create React App**](https://github.com/facebook/create-react-app)
