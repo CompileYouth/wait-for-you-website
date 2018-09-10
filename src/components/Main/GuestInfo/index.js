@@ -183,4 +183,12 @@ export default [
         education: '广东外语外贸大学硕士',
         detailLink: ''
     },
+    {
+        no: 24,
+        place: '重庆',
+        age: '1992',
+        occupation: '银行客户经理',
+        education: '西南大学',
+        detailLink: ''
+    },
 ];
